@@ -13,10 +13,19 @@ body {
     display: none;
 }
 
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 /* header */
 
 .main-header {
-    background: #3070B5;
+    background: #193b60;
     background-image: url("../img/bg/bg-header.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -65,12 +74,6 @@ body {
     margin-bottom: 60px;
     font-family: 'Merriweather', serif;
     text-align: center;
-}
-
-.samples {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .horizontal-list {
@@ -135,12 +138,6 @@ body {
     margin-bottom: 15px;
 }
 
-.footer-container {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer-column {
     list-style-type: none;
     width: 360px;
@@ -175,6 +172,7 @@ body {
     color: white;
     text-decoration: none;
     margin-right: 30px;
+    transition: 0.3s ease-out; /*плавное изменение*/
 }
 
 .footer-social-icons a:last-child {
@@ -203,9 +201,76 @@ body {
     padding-bottom: 8px;
     padding-left: 23px;
     padding-right: 23px;
+
+    transition: 0.3s ease-out; /*плавное изменение*/
 }
 
 .footer-button:hover {
     color: #6479a2;
     background: white;
+}
+
+/* single page */
+
+.portfolio-single-page {
+    text-align: center;
+}
+
+.portfolio-single-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-back-organica {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #EF924D;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    display: inline-block;
+    border-width: 2px;
+    border-color: EF924D;
+    border-style: solid;
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    transition: 0.3s ease-out; /*плавное изменение*/
+}
+
+.button-back-organica:hover {
+    color: white;
+    background: #EF924D;
+}
+
+.button-back-apollo {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1c4d76;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    display: inline-block;
+    border-width: 2px;
+    border-color: 1c4d76;
+    border-style: solid;
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    transition: 0.3s ease-out; /*плавное изменение*/
+}
+
+.button-back-apollo:hover {
+    color: white;
+    background: #1c4d76;
 }
