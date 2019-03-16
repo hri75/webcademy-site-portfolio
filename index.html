@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Портфолио</title>
+
+    <!--Инструкция для IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Отображать страницу в масштабе 100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Нормализация стилей-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
     <link rel="stylesheet" href="css/main.css">
+
+    <!--Иконка в title-->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+
+    <!--Подключение веб-шрифтов-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -14,45 +27,30 @@
     <header class="main-header">
         <p class="header-title">Рустам Харисов</p>
         <p class="header-slogan">Верстка сайтов на HTML и CSS<br>HTML5 CSS3 JavaScript</p>
-        <p class="header-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+        <p class="header-arrow"><a href="index.html#portfolio"><i class="fa fa-chevron-down" aria-hidden="true"></a></i></p>
     </header>
 
-    <main class="portfolio">
+    <main class="portfolio" >
+        <a name="portfolio"></a>
         <h1 class="portfolio-title">Портфолио</h1>
 
-        <section class="samples">
+        <section class="container">
             <h2 class="visually-hidden">Примеры работ</h2>
 
             <ul class="horizontal-list">
                 <li class="sample">
-                    <a href="#"><img class="sample-icon" src="img/portfolio/project_organica.jpg" alt="Макет Органика"></a>
-                    <p class="sample-name"><a href="#">Макет Органика</a></p>
+                    <a href="work-organika.html"><img class="sample-icon" src="img/portfolio/project_organica.jpg" alt="Макет Органика"></a>
+                    <p class="sample-name"><a href="work-organika.html">Макет Органика</a></p>
                     <p class="sample-description">Верстка одностраничного сайта по PSD макету.</p>
                 </li>
                 <li class="sample">
-                    <a  href="#"><img class="sample-icon" src="img/portfolio/project_apollo.jpg" alt="Учебный макет Аполло"></a>
-                    <p class="sample-name"><a href="#">Учебный макет Аполло</a></p>
+                    <a  href="work-apollo.html"><img class="sample-icon" src="img/portfolio/project_apollo.jpg" alt="Учебный макет Аполло"></a>
+                    <p class="sample-name"><a href="work-apollo.html">Учебный макет Аполло</a></p>
                     <p class="sample-description">Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
                 </li>
                 <li class="sample">
-                    <a  href="#"><img class="sample-icon" src="img/portfolio/project_portfolio.jpg" alt="Личный сайт портфолио"></a>
-                    <p class="sample-name"><a href="#">Личный сайт портфолио</a></p>
-                    <p class="sample-description">Верстка личного сайта портфолио, на котором Вы сейчас находитесь.</p>
-                </li>
-
-                <li class="sample">
-                    <a href="#"><img class="sample-icon" src="img/portfolio/project_organica.jpg" alt="Макет Органика"></a>
-                    <p class="sample-name"><a href="#">2Макет Органика</a></p>
-                    <p class="sample-description">Верстка одностраничного сайта по PSD макету.</p>
-                </li>
-                <li class="sample">
-                    <a  href="#"><img class="sample-icon" src="img/portfolio/project_apollo.jpg" alt="Учебный макет Аполло"></a>
-                    <p class="sample-name"><a href="#">2Учебный макет Аполло</a></p>
-                    <p class="sample-description">Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
-                </li>
-                <li class="sample">
-                    <a  href="#"><img class="sample-icon" src="img/portfolio/project_portfolio.jpg" alt="Личный сайт портфолио"></a>
-                    <p class="sample-name"><a href="#">2Личный сайт портфолио</a></p>
+                    <a  href="work-portfolio.html"><img class="sample-icon" src="img/portfolio/project_portfolio.jpg" alt="Личный сайт портфолио"></a>
+                    <p class="sample-name"><a href="work-portfolio.html">Личный сайт портфолио</a></p>
                     <p class="sample-description">Верстка личного сайта портфолио, на котором Вы сейчас находитесь.</p>
                 </li>
 
@@ -62,7 +60,7 @@
     </main>
 
     <footer class="main-footer">
-        <div class="footer-container">
+        <div class="container">
             <ul class="horizontal-list">
                 <li class="footer-column">
                     <p class="footer-name">Рустам Харисов</p>

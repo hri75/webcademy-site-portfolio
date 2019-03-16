@@ -7,21 +7,38 @@ body {
     line-height: 1.5;
     color: black;
     background: white;
+    /*для мобильной версии*/
+    min-width: 280px;
 }
 
 .visually-hidden {
     display: none;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 /* header */
 
 .main-header {
-    background: #3070B5;
+    background: #193b60;
     background-image: url("../img/bg/bg-header.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    /* для мобильных устройств*/
+    min-height: 400px;
 
     color: white;
     text-align: center;
@@ -30,6 +47,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.main-header a {
+    text-decoration: none;
+    color: white;
 }
 
 .header-title {
@@ -65,12 +87,6 @@ body {
     margin-bottom: 60px;
     font-family: 'Merriweather', serif;
     text-align: center;
-}
-
-.samples {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .horizontal-list {
@@ -121,6 +137,13 @@ body {
     padding: 0;
 }
 
+/*для мобильной версии*/
+.sample-icon {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* footer */
 
 .main-footer {
@@ -133,12 +156,6 @@ body {
 .main-footer p {
     margin-top: 0;
     margin-bottom: 15px;
-}
-
-.footer-container {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .footer-column {
@@ -175,6 +192,7 @@ body {
     color: white;
     text-decoration: none;
     margin-right: 30px;
+    transition: 0.3s ease-out; /*плавное изменение*/
 }
 
 .footer-social-icons a:last-child {
@@ -203,9 +221,131 @@ body {
     padding-bottom: 8px;
     padding-left: 23px;
     padding-right: 23px;
+
+    transition: 0.3s ease-out; /*плавное изменение*/
 }
 
 .footer-button:hover {
     color: #6479a2;
     background: white;
+}
+
+/* single page */
+
+.portfolio-single-page {
+    text-align: center;
+
+    /*центрирование по вертикали не работает. Как?*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.portfolio-single-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-back-organica {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #EF924D;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    display: inline-block;
+    border-width: 2px;
+    border-color: EF924D;
+    border-style: solid;
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    transition: 0.3s ease-out; /*плавное изменение*/
+}
+
+.button-back-organica:hover {
+    color: white;
+    background: #EF924D;
+}
+
+.button-back-apollo {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1c4d76;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    display: inline-block;
+    border-width: 2px;
+    border-color: 1c4d76;
+    border-style: solid;
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    transition: 0.3s ease-out; /*плавное изменение*/
+}
+
+.button-back-apollo:hover {
+    color: white;
+    background: #1c4d76;
+}
+
+/* media */
+
+@media (max-width: 1160px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .footer-column, .sample {
+        width: 100%;
+
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .main-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .header-slogan {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .portfolio-title {
+        font-size: 36px;
+    }
+
+    .main-footer {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
 }
